@@ -1,0 +1,24 @@
+{"id":"um01","kind":"fact","question":"STM32 软件 I2C 使用哪两个 GPIOB Pin？","expected_source":"stm32_mpu6050.md","expected_terms":["Pin 10","Pin 11"]}
+{"id":"um02","kind":"fact","question":"软件 I2C 的 GPIO 输出模式和速度是什么？","expected_source":"stm32_mpu6050.md","expected_terms":["开漏","50MHz"]}
+{"id":"um03","kind":"fact","question":"MPU6050 示例的写方向地址是多少？","expected_source":"stm32_mpu6050.md","expected_terms":["0xD0"]}
+{"id":"um04","kind":"procedure","question":"MPU6050 读寄存器为什么要先写寄存器地址再重复起始？","expected_source":"stm32_mpu6050.md","expected_terms":["寄存器地址","重复 Start","读方向"]}
+{"id":"um05","kind":"procedure","question":"如何让 ESP32-C3 SuperMini 进入下载模式？","expected_source":"esp32_c3_supermini.md","expected_terms":["BOOT","RESET"]}
+{"id":"um06","kind":"fact","question":"ESP32-C3 串口没有输出时应检查什么设置？","expected_source":"esp32_c3_supermini.md","expected_terms":["USB CDC On Boot","Enabled"]}
+{"id":"um07","kind":"fact","question":"ESP32-C3 示例串口使用多少波特率？","expected_source":"esp32_c3_supermini.md","expected_terms":["115200"]}
+{"id":"um08","kind":"procedure","question":"DHT11 一次读取有多少个字节，第五个字节做什么？","expected_source":"gizwits_dht11.md","expected_terms":["5 个字节","校验和"]}
+{"id":"um09","kind":"fact","question":"DHT11 的前两个字节和第三、第四个字节分别表示什么？","expected_source":"gizwits_dht11.md","expected_terms":["湿度","温度"]}
+{"id":"um10","kind":"procedure","question":"DHT11 读取前数据线需要怎样复位？","expected_source":"gizwits_dht11.md","expected_terms":["拉低","20ms","30us"]}
+{"id":"um11","kind":"cross","question":"商品爬虫从列表页到最终商品记录的大致数据流是什么？","expected_source":"python_crawler.md","expected_terms":["SKU","基本信息","促销","评论","价格"]}
+{"id":"um12","kind":"procedure","question":"商品列表翻页时需要检查什么条件？","expected_source":"python_crawler.md","expected_terms":["下一页 URL"]}
+{"id":"um13","kind":"fact","question":"分布式爬虫中 Redis 和 MongoDB 可以分别承担什么角色？","expected_source":"python_crawler.md","expected_terms":["Redis 队列","MongoDB"]}
+{"id":"um14","kind":"fact","question":"列表是可变对象时，两个变量赋值后 append 会发生什么？","expected_source":"python_fundamentals.md","expected_terms":["同一个列表","append","新增"]}
+{"id":"um15","kind":"procedure","question":"自定义 ShortInputError 需要继承什么，并保存哪些信息？","expected_source":"python_fundamentals.md","expected_terms":["Exception","实际长度","最小长度"]}
+{"id":"um16","kind":"procedure","question":"Python 文件备份示例如何确定后缀并复制文件？","expected_source":"python_fundamentals.md","expected_terms":["最后一个点","二进制","循环读取"]}
+{"id":"um17","kind":"fact","question":"student 表包含哪些字段？","expected_source":"python_sql_data.md","expected_terms":["id","name","age","gender"]}
+{"id":"um18","kind":"procedure","question":"按省份统计销售额时应该累加哪个字段？","expected_source":"python_sql_data.md","expected_terms":["province","money"]}
+{"id":"um19","kind":"tool","question":"分析 ERROR 日志中 USB CDC On Boot disabled 的原因并给出下一步。","expected_source":"esp32_serial.log","expected_terms":["USB CDC On Boot"]}
+{"id":"um20","kind":"tool","question":"搜索 ESP32 串口日志中的 ERROR 并生成排查清单。","expected_source":"esp32_serial.log","expected_terms":["USB CDC On Boot"]}
+{"id":"um21","kind":"unanswerable","question":"这些资料中是否说明 ESP32-C3 的晶振频率和 Flash 容量？","expected_source":null,"expected_terms":[]}
+{"id":"um22","kind":"unanswerable","question":"这些资料中是否给出了 MiMo API Key？","expected_source":null,"expected_terms":[]}
+{"id":"um23","kind":"unanswerable","question":"MPU6050 的实际物理安装方向和校准零偏是多少？","expected_source":null,"expected_terms":[]}
+{"id":"um24","kind":"unanswerable","question":"机智云平台的云端请求超时策略是多少？","expected_source":null,"expected_terms":[]}
