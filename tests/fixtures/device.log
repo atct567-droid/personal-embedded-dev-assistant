@@ -1,0 +1,6 @@
+2026-09-20T10:00:00Z INFO boot complete
+2026-09-20T10:00:01Z ERROR uart timeout after 1000ms
+2026-09-20T10:00:02Z WARN retry=1
+2026-09-20T10:00:03Z INFO uart recovered
+2026-09-20T10:00:04Z ERROR watchdog reset detected
+token=demo-secret
