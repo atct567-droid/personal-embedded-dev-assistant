@@ -1,0 +1,8 @@
+{"id":"ho01","kind":"fact","question":"初始化摘要中 PWR_MGMT_1 和 PWR_MGMT_2 分别设置为什么？","expected_source":"stm32_mpu6050.md","expected_terms":["0x01","0x00"],"acceptance":"两个寄存器和值一一对应，并引用初始化寄存器段。"}
+{"id":"ho02","kind":"fact","question":"BLE 示例特征支持哪些访问属性，收到写入后回调做什么？","expected_source":"esp32_c3_supermini.md","expected_terms":["READ","WRITE","打印"],"acceptance":"说明读写属性和读取新值并打印，不编造通知功能。"}
+{"id":"ho03","kind":"cross_section","question":"根据 STM32 摘要，软件 I2C 初始化结束时两根线处于什么电平，哪个寄存器用于读取器件 ID？","expected_source":"stm32_mpu6050.md","expected_terms":["拉高","WHO_AM_I"],"acceptance":"同时引用引脚配置段和初始化寄存器段，分别支持两个结论。"}
+{"id":"ho04","kind":"cross_section","question":"ESP32 示例程序上传成功后如何启动新程序，Wi-Fi 示例等待哪个连接状态？","expected_source":"esp32_c3_supermini.md","expected_terms":["RESET","WL_CONNECTED"],"acceptance":"分别引用下载复位段与 Wi-Fi 示例段；不能把程序启动等同联网成功。"}
+{"id":"ho05","kind":"tool","question":"分析 esp32_serial.log 中 ERROR 的时间和它后面记录的事件；能否确定串口输出已恢复？","expected_source":"esp32_serial.log","expected_terms":["12:00:04","reset"],"acceptance":"指出错误在第3行、后续第4行仅表示复位完成；没有输出恢复证据，不能宣称恢复。需要检查上下文而非仅匹配 ERROR。"}
+{"id":"ho06","kind":"tool","question":"按 esp32_serial.log 的先后顺序解释 WARN 和 ERROR 分别描述什么，是否足以断言硬件损坏？","expected_source":"esp32_serial.log","expected_terms":["BOOT","RESET","USB CDC"],"acceptance":"引用第2、3行区分下载模式提示和 CDC 配置错误，不据此断言硬件损坏。"}
+{"id":"ho07","kind":"unanswerable","question":"当前 BLE 示例服务的 UUID 具体是什么？","expected_source":null,"expected_terms":[],"acceptance":"明确资料未提供 UUID，不编造。"}
+{"id":"ho08","kind":"unanswerable","question":"这块板实际使用的上拉电阻阻值和实测 I2C 时钟频率分别是多少？","expected_source":null,"expected_terms":[],"acceptance":"明确缺少硬件参数和实测记录，不能由软件摘要推断数值。"}
