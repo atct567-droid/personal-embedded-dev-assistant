@@ -1,0 +1,5 @@
+2026-09-20T12:00:00Z INFO boot complete
+2026-09-20T12:00:01Z WARN download mode required: press BOOT then RESET
+2026-09-20T12:00:04Z ERROR serial output unavailable: USB CDC On Boot disabled
+2026-09-20T12:00:08Z INFO reset completed
+token=synthetic-secret
