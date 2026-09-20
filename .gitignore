@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# User data, runtime state and generated reports
+data/inbox/*
+!data/inbox/.gitkeep
+data/index/*
+!data/index/.gitkeep
+data/logs/*
+!data/logs/.gitkeep
+data/notes/*
+!data/notes/.gitkeep
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+data/eval_report*.json
+eval/runs/
+
+# Models and large artifacts
+*.bin
+*.safetensors
+*.gguf
+*.onnx
+*.pt
+*.pth
