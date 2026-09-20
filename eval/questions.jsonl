@@ -1,0 +1,22 @@
+{"id":"q01","kind":"fact","question":"PA9 在 UART 中承担什么角色？","expected_source":"uart.md","expected_terms":["PA9","TX"]}
+{"id":"q02","kind":"fact","question":"PA10 在 UART 中承担什么角色？","expected_source":"uart.md","expected_terms":["PA10","RX"]}
+{"id":"q03","kind":"fact","question":"演示 UART 的波特率是多少？","expected_source":"uart.md","expected_terms":["115200"]}
+{"id":"q04","kind":"fact","question":"SHT30 的 SCL 连接哪个引脚？","expected_source":"i2c_sensors.md","expected_terms":["PB6"]}
+{"id":"q05","kind":"fact","question":"SHT30 的默认 I2C 地址是什么？","expected_source":"i2c_sensors.md","expected_terms":["0x44"]}
+{"id":"q06","kind":"cross","question":"UART timeout 时，连接和配置应该先检查哪些项目？","expected_source":"troubleshooting.md","expected_terms":["TX/RX","GND","波特率"]}
+{"id":"q07","kind":"cross","question":"SHT30 从发起测量到完成读取还需要什么校验？","expected_source":"i2c_sensors.md","expected_terms":["CRC"]}
+{"id":"q08","kind":"cross","question":"watchdog reset 后应该先读取什么并检查什么？","expected_source":"troubleshooting.md","expected_terms":["复位原因","喂狗"]}
+{"id":"q09","kind":"cross","question":"发送失败时哪些信息需要记录，为什么不能把请求入队当作收到？","expected_source":"troubleshooting.md","expected_terms":["错误码","重试次数"]}
+{"id":"q10","kind":"procedure","question":"请按顺序说明 UART 初始化步骤。","expected_source":"uart.md","expected_terms":["GPIO","USART","115200"]}
+{"id":"q11","kind":"procedure","question":"请给出 SHT30 的 I2C 读取流程。","expected_source":"i2c_sensors.md","expected_terms":["起始","测量命令","CRC","停止"]}
+{"id":"q12","kind":"procedure","question":"如何排查 UART timeout？","expected_source":"troubleshooting.md","expected_terms":["TX/RX","GND","波特率"]}
+{"id":"q13","kind":"procedure","question":"如何排查 watchdog reset？","expected_source":"troubleshooting.md","expected_terms":["复位原因","阻塞等待"]}
+{"id":"q14","kind":"unanswerable","question":"本项目 SPI DMA 的时钟树应该如何配置？","expected_source":null,"expected_terms":[]}
+{"id":"q15","kind":"unanswerable","question":"CAN 总线终端电阻具体使用多少欧姆？","expected_source":null,"expected_terms":[]}
+{"id":"q16","kind":"unanswerable","question":"机械限位开关接在哪个 GPIO？","expected_source":null,"expected_terms":[]}
+{"id":"q17","kind":"unanswerable","question":"Wi-Fi 密码是什么？","expected_source":null,"expected_terms":[]}
+{"id":"q18","kind":"tool","question":"请分析 device.log 中的 ERROR 并给出排查清单。","expected_source":"device.log","expected_terms":["uart timeout"]}
+{"id":"q19","kind":"tool","question":"针对 UART timeout 搜索日志并生成排查清单。","expected_source":"device.log","expected_terms":["uart timeout"]}
+{"id":"q20","kind":"tool","question":"搜索 ERROR 日志，整理结果但先不要保存笔记。","expected_source":"device.log","expected_terms":["ERROR"]}
+{"id":"q21","kind":"tool","question":"分析 watchdog reset 日志并生成排查清单。","expected_source":"device.log","expected_terms":["watchdog reset"]}
+{"id":"q22","kind":"tool","question":"搜索 ERROR 日志并在确认后保存排查笔记。","expected_source":"device.log","expected_terms":["ERROR"],"confirm":true}
